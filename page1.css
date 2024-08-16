@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "CinzelDecorative-Bold";
+    src: url(./cinzel_decorative/CinzelDecorative-Bold.ttf);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    scroll-behavior: smooth;
+  }
+  
+  #gradient-container {
+    background: radial-gradient(
+      50% 100% at 50% 100%,
+      hsl(243, 89%, 43%),
+      hsl(284, 91%, 47%),
+      transparent 50%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+    /* go from 0% to 400% */
+    background-position: bottom;
+    font-size: clamp(1.675rem, -0.0727rem + 4.7676vw, 2.5rem);
+    /*   font-size: 42px; */
+    text-align: center;
+    /*     font-family: "CinzelDecorative-Bold"; */
+    font-family: "Cinzel Decorative", cursive;
+    width: 80vw;
+    margin: auto;
+    position: sticky;
+    transform: translateY(-50%);
+    top: 50%;
+    /*   left: 50%; */
+  
+    /* experiment effects by uncommenting below lines */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*   -webkit-text-stroke-color: rgb(255, 253, 220); */
+    /*   -webkit-text-stroke-width: 1px; */
+  }
+  @media (max-width: 379.98px) {
+    #gradient-container {
+      font-size: calc(12px + 1vw);
+    }
+  }
+  @media (min-width: 380px) and (max-width: 575.98px) {
+    #gradient-container {
+      font-size: calc(14px + 1vw);
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    #gradient-container {
+      font-size: calc(19px + 1vw);
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    #gradient-container {
+      font-size: calc(25px + 1vw);
+    }
+  }
+  #scroll-container {
+    height: 200vh;
+  }
+  @media (max-height: 575.98px) {
+    #scroll-container {
+      height: 1000px;
+    }
+    #gradient-container {
+      font-size: calc(14px + 1vw) !important;
+    }
+  }
+  .title-text {
+    font-size: larger;
+    position:fixed;
+    top: 20px;
+    left: 30px;
+    color: hsl(307, 91%, 47%);
+    text-size-adjust:unset;
+  }
+  #other-website {
+    text-align: center;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium';
+
+  }
+  
